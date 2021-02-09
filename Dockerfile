@@ -10,12 +10,15 @@ COPY package*.json ./
 
 # Install dependencies
 RUN npm install
+# RUN npm install bcrypt
 
 # Copy app source
 COPY . .
 
 # Bind the port that the image will run on
-EXPOSE 8080
+EXPOSE 8081
 
 # Define the Docker image's behavior at runtime
-CMD ["node", "server.js"]
+CMD [ "npx", "sequelize-cli", "db:migrate" ]
+CMD [ "npm", "run", "dev" ]
+# CMD [ "npm run dev" ]

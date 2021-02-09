@@ -3,11 +3,11 @@ import {config} from './config/config';
 
 
 export const sequelize = new Sequelize({
-  'username': config.username,
-  'password': config.password,
-  'database': config.database,
-  'host': config.host,
+  'username': config.dev.username,
+  'password': config.dev.password,
+  'database': config.dev.database,
+  'host': config.dev.host,
 
-  'dialect': config.dialect,
+  'dialect': config.dev.dialect,
   'storage': ':memory:',
 });
