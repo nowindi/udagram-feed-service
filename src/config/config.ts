@@ -8,15 +8,15 @@ export const config = {
     'aws_region': 'eu-west-1',
     'aws_profile': 'default',
     'aws_media_bucket': 'udagram-jrey-dev',
-    'url': 'http://127.0.0.1:8081/',
+    'url': 'http://localhost:8080',
   },
-  'prod': {
-    "username": "",
-    "password": "",
-    "database": "udagram_prod",
-    "host": "",
-    "dialect": "postgres"
-  }
+  // 'prod': {
+  //   "username": "",
+  //   "password": "",
+  //   "database": "udagram_prod",
+  //   "host": "",
+  //   "dialect": "postgres"
+  // }
   // 'jwt': {
   //   'secret': process.env.JWT_SECRET,
   // },
